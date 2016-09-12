@@ -61,7 +61,7 @@
     </div>
 </div>
 <#--<tr>-->
-<#--<td colspan="2" style="text-align: center;">测试账号1：test1/123456-->
+<#--<td colspan="2" style="text-align: center;">测试账号：test1/123456-->
 <#--</td>-->
 <#--</tr>-->
 <#--<tr>-->
