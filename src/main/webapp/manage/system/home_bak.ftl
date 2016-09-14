@@ -30,8 +30,8 @@
                 <#--<%-- 							<img alt="" src="${systemSetting().manageHttp}/resource/images/refresh.png"> --%>-->
                     <!-- 						</a> -->
                 </li>
-              <!--  <li><a href="#tabs-2" style="font-size: 14px;">基本设置</a></li>
-                <li><a href="#tabs-3" style="font-size: 14px;">图片设置</a></li>-->
+                <li><a href="#tabs-2" style="font-size: 14px;">基本设置</a></li>
+                <li><a href="#tabs-3" style="font-size: 14px;">图片设置</a></li>
             <#--<%-- 					<li><a href="${basepath}/manage/systemlog/systemlogListAndDetail?init=y&type=2">更新日志</a></li> --%>-->
                 <!-- 					<li><a href="#tabs-4">新增订单</a></li> -->
                 <!-- 					<li><a href="#tabs-5">最近销售状况</a></li> -->
@@ -89,7 +89,7 @@
                     </tr>
                 </table>
             </div>
-            <!--<div id="tabs-2">
+            <div id="tabs-2">
                 <table class="table table-condensed">
                     <tr>
                         <td style="text-align: right;">系统版本:</td>
@@ -179,6 +179,6 @@
                     </tr>
                 </table>
             </div>
-        </div>-->
+        </div>
         <!-- tab end -->
 </@page.pageBase>

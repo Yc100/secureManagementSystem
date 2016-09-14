@@ -4020,6 +4020,23 @@ INSERT INTO `t_lable` VALUES ('24', '好看');
 INSERT INTO `t_lable` VALUES ('25', '好笑');
 INSERT INTO `t_lable` VALUES ('26', '好吃');
 
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : jeeshop
+Source Server Version : 50615
+Source Host           : localhost:3306
+Source Database       : jeeshop
+
+Target Server Type    : MYSQL
+Target Server Version : 50615
+File Encoding         : 65001
+
+Date: 2016-09-12 14:30:13
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
 -- ----------------------------
 -- Table structure for t_menu
 -- ----------------------------
@@ -4032,7 +4049,7 @@ CREATE TABLE `t_menu` (
   `orderNum` int(11) NOT NULL DEFAULT '0',
   `type` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of t_menu
@@ -4098,6 +4115,8 @@ INSERT INTO `t_menu` VALUES ('91', '0', '', '活动管理', '19', 'module');
 INSERT INTO `t_menu` VALUES ('92', '91', '/manage/activity/selectList?init=y', '商品促销', '1', 'page');
 INSERT INTO `t_menu` VALUES ('93', '11', '/manage/gift/selectList?init=y', '赠品管理', '8', 'page');
 INSERT INTO `t_menu` VALUES ('94', '6', '/manage/hotquery/selectList?init=y', '热门查询管理', '20', 'page');
+INSERT INTO `t_menu` VALUES ('96', '0', '/manage/user/toChangePwd', '修改密码', '5', 'page');
+INSERT INTO `t_menu` VALUES ('97', '0', '/manage/secureProduct/selectList?init=y', '保险产品管理', '2', 'page');
 
 -- ----------------------------
 -- Table structure for t_navigation

@@ -14,7 +14,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${basepath}/manage/user/home">JSHOP --- 后台管理系统</a>
+                <a class="navbar-brand" href="${basepath}/manage/user/home"><label style="font-size:23px ;font-family:SimHei" >金鼎涛</label>&nbsp;<label style="font-size:18px;font-family:MingLiU
+                ">保险业务系统<label></a>
             </div>
             <!-- /.navbar-header -->
                     <#--<ul class="nav navbar-nav">-->
@@ -36,7 +37,7 @@
                     <#--</ul>-->
                <!-- /.navbar-collapse -->
             <ul class="nav navbar-top-links navbar-right">
-                 <li><a href="${systemSetting().www}" target="_blank"><i class="glyphicon glyphicon-globe"></i> 访问站点</a></li>
+             <!--    <li><a href="${systemSetting().www}" target="_blank"><i class="glyphicon glyphicon-globe"></i> 访问站点</a></li>-->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> ${currentUser().nickname!currentUser().username} <i class="fa fa-caret-down"></i>

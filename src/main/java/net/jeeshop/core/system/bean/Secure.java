@@ -2,10 +2,7 @@ package net.jeeshop.core.system.bean;
 
 import net.jeeshop.core.dao.page.PagerModel;
 
-/**
- * 菜单
- */
-public class Menu extends PagerModel {
+public class Secure  extends PagerModel {
 	private String pid;
 	private String url;
 	private String name;

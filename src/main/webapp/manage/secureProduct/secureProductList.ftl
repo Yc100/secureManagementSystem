@@ -32,6 +32,7 @@
 				<td style="text-align: left;" ><input type="text"  value="${e.name!""}" name="name"  class="input-small"
 						id="name" />
 				</td>			
+				
 			</tr>
 			<tr>
 				<td colspan="20">

@@ -9,6 +9,7 @@ import net.jeeshop.core.system.bean.MenuItem;
 import net.jeeshop.core.system.bean.User;
 import net.jeeshop.core.util.AddressUtils;
 import net.jeeshop.core.util.MD5;
+import net.jeeshop.services.manage.secureProduct.bean.SecureProduct;
 import net.jeeshop.services.manage.system.impl.MenuService;
 import net.jeeshop.services.manage.system.impl.RoleService;
 import net.jeeshop.services.manage.system.impl.UserService;
@@ -581,4 +582,24 @@ public class UserAction extends BaseController<User> {
     public String deletes(HttpServletRequest request, String[] ids, @ModelAttribute("e") User e, RedirectAttributes flushAttrs) throws Exception{
         throw new RuntimeException("not support");
     }
+    
+    
+    /**
+	 * 保险绑定
+	 * @return
+	 * @throws Exception 
+	 */
+	public String bindUpProduct(@ModelAttribute("e")SecureProduct e) throws Exception{		
+		String[] ids = e.getId().split(",");
+		 List<String> tmp = new ArrayList<String>();
+	        for(String str:ids){
+	            if(str!=null && str.length()!=0){
+	                tmp.add(str);
+	            }
+	        }
+	        ids = tmp.toArray(new String[0]);
+		//updateStatus(ids,SecureProduct.Product_status_y);
+		return "redirect:selectList";
+		//return selectList(RequestHolder.getRequest(), new SecureProduct());
+	}
 }

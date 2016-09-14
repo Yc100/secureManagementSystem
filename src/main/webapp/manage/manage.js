@@ -66,6 +66,7 @@ $(function(){
 
 //创建遮罩效果
 function createMark(){
+	debugger;
 	$.blockUI({ message: "系统处理中，请等待...",css: { 
         border: 'none', 
         padding: '15px', 
@@ -99,6 +100,7 @@ function selectList(obj){
 //批量删除选择的记录
 function submitIDs(obj,tip){
 	console.log("submitIDs...");
+	debugger;
 	if ($("input:checked").size() == 0) {
 		alert("请先选择要操作的内容！");
 		return false;
@@ -112,6 +114,8 @@ function submitIDs(obj,tip){
 	}
 	return false;
 }
+
+
 
 //不需要任何验证的提交    
 function submitNotValid2222(obj){
